@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image";
 import { Menu, X, GraduationCap } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet"
@@ -23,9 +24,14 @@ export function Navbar() {
         <nav className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
-              <GraduationCap className="w-6 h-6 text-primary-foreground" />
-            </div>
+            <Image 
+                src="/ENGLISH BANUA LOGO.png" // Ganti dengan path lokasi file gambar Anda di folder public
+                alt="Banua Scholarship Logo"
+                width={90}
+                height={90}
+                className="object-contain rounded-xl" // Hapus rounded-xl jika logo Anda sudah bulat/transparan dan tidak butuh sudut melengkung
+                priority
+            />
             <div className="flex flex-col">
               <span className="text-lg font-bold text-foreground leading-tight">
                 Banua <span className="text-primary">Scholarship</span>

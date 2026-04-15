@@ -38,7 +38,7 @@ export function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
               </span>
-              <span className="text-sm font-medium text-primary">Program Baru 2026</span>
+              <span className="text-sm font-medium text-primary">New Banua Scholarship Launchpad</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-foreground leading-tight mb-6 text-balance">
@@ -82,8 +82,7 @@ export function Hero() {
           <div className="lg:col-span-5 relative w-full h-[60vh] lg:h-[85vh] flex items-end justify-center z-10 hidden lg:flex">
             
             {/* Container Murid: max-width diperkecil sedikit agar tidak 'tumpah' ke kiri */}
-            <div className="absolute bottom-0 w-full max-w-[1000px] h-full origin-bottom">
-              <Image
+            <div className="absolute bottom-0 right-[-40%] w-[600px] lg:w-[700px] xl:w-[800px] h-[110%] origin-bottom pointer-events-none">              <Image
                 src="/images/student.png"
                 alt="Students ready to study abroad"
                 fill
@@ -116,7 +115,7 @@ export function Hero() {
             </div>
 
             {/* Expert Tutor */}
-            <div className="absolute bottom-[25%] right-[-5%] bg-[#f97316] rounded-2xl px-5 py-3 shadow-2xl border-2 border-white/20 z-20" style={{ animation: 'float 5s ease-in-out infinite' }}>
+            <div className="absolute bottom-[25%] right-[-5%] bg-[#f97316] rounded-2xl px-5 py-3 shadow-2xl border-2 border-white/20 animate-float z-20">
               <div className="flex items-center gap-3">
                 <Laptop className="w-7 h-7 text-white" />
                 <div className="leading-tight text-left">
